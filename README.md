@@ -20,10 +20,6 @@ sentiment-ptuning-v2/
 │   ├── processed/
 │   └── splits/
 ├── src/
-│   ├── data_preprocessing.py
-│   ├── model_utils.py
-│   ├── trainer.py
-│   └── inference.py
 ├── experiments/
 ├── models/
 │   └── saved_prompts/
