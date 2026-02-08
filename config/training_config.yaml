@@ -1,0 +1,40 @@
+experiment:
+  name: "sentiment-ptuning-v2"
+  output_dir: "./experiments"
+
+data:
+  source: "csv"
+  path: "./data/raw/sentiment_dataset.csv"
+  test_size: 0.2
+  val_size: 0.1
+  label_map:
+    negative: 0
+    positive: 1
+
+model:
+  base_model: "gpt2"
+  num_labels: 2
+  max_length: 128
+  prompt_tuning_init: "TEXT"
+  prompt_tuning_init_text: "Classify the sentiment of this review: "
+  num_virtual_tokens: 20
+  encoder_hidden_size: 128
+  encoder_num_layers: 2
+  encoder_dropout: 0.1
+  prompt_template: "Text: {text}\nSentiment:"
+
+training:
+  seed: 42
+  num_epochs: 10
+  batch_size: 16
+  gradient_accumulation_steps: 2
+  learning_rate: 3e-2
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  use_cpu: false
+  fp16: true
+
+logging:
+  use_wandb: true
+  wandb_project: "ptuning-v2-sentiment"
+  logging_steps: 10

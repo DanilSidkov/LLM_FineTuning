@@ -1,0 +1,21 @@
+text,label,category
+"I'm thrilled with my new phone! The camera quality is exceptional.",positive,electronics
+"This laptop is a game-changer for my work. Super fast and reliable.",positive,electronics
+"The worst customer service I've ever experienced. Avoid this company!",negative,service
+"Product arrived damaged and the return process was a nightmare.",negative,shipping
+"The movie was entertaining but the plot was predictable.",neutral,entertainment
+"Hotel was clean and comfortable, though the breakfast could be better.",neutral,travel
+"Amazing value for money! Would buy again in a heartbeat.",positive,general
+"Absolutely terrible quality. Fell apart after a week of use.",negative,quality
+"It's an average product, does what it claims but nothing more.",neutral,general
+"The staff was friendly and helpful throughout my stay.",positive,service
+"Package never arrived and no one responded to my emails.",negative,shipping
+"The book was interesting but a bit too long for my taste.",neutral,entertainment
+"Best decision ever! This product solved all my problems.",positive,general
+"Complete waste of time and money. Regret buying this.",negative,general
+"Decent performance for the price, though not exceptional.",neutral,electronics
+"Outstanding quality and attention to detail. 5 stars!",positive,quality
+"Horrible experience from start to finish. Never again!",negative,service
+"It was okay, nothing special but gets the job done.",neutral,general
+"The food was absolutely divine! Can't wait to go back.",positive,food
+"Service was slow and the food was overcooked.",negative,food

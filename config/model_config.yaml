@@ -1,0 +1,14 @@
+models:
+  default:
+    path: "./experiments/sentiment-ptuning-v2_best"
+    base_model: "gpt2"
+    num_labels: 2
+    label_map:
+      0: "negative"
+      1: "positive"
+    description: "P-Tuning v2 для бинарной классификации сентиментов"
+
+inference:
+  max_length: 128
+  batch_size: 32
+  device: "auto"

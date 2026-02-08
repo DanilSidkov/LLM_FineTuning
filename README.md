@@ -1,0 +1,35 @@
+# P-Tuning v2 для Sentiment Analysis
+
+Производственный пайплайн для эффективной настройки языковых моделей с использованием P-Tuning v2 на задаче классификации сентиментов.
+
+## Что я использую
+
+- **P-Tuning v2** - State-of-the-art метод parameter-efficient fine-tuning
+- **WandB логирование**
+- **Конфигурация через YAML**
+
+### Структура проекта
+
+```bash
+sentiment-ptuning-v2/
+├── config/
+│   ├── model_config.yaml
+│   └── training_config.yaml
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── splits/
+├── src/
+│   ├── data_preprocessing.py
+│   ├── model_utils.py
+│   ├── trainer.py
+│   └── inference.py
+├── experiments/
+├── models/
+│   └── saved_prompts/
+├── notebooks/
+│   └── exploration.ipynb
+├── requirements.txt
+├── train.py
+└── README.md
+```
